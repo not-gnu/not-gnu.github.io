@@ -72,9 +72,10 @@ div h2 {
     transition-property: width, height, font-size, box-shadow;
     cursor: pointer;
     border: solid;
-    border-width: 1px;
+    border-width: 0.5px;
     border-radius: 5px;
     background-color: white;
+    margin-top: 10px;
 }
 
 .button-blog-select:hover {
