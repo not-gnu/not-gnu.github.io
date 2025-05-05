@@ -24,6 +24,10 @@ html, body {
     display: flex;
 }
 
+img {
+    align-items: center;
+}
+
 p {
     line-height: 1.5;
 }
