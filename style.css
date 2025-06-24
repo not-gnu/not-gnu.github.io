@@ -135,6 +135,17 @@ mark {
     font-size: large;
 }
 
+.button-dropdown-recent {
+    background-color: hsla(211, 100%, 50%, 0);
+    padding: 10px 15px;
+    border:none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
 .date {
     font-size:small;
 }
@@ -161,4 +172,12 @@ mark {
 
 hr {
     color:black;
+}
+
+.quote {
+    width: 100%;
+    font-size:small;
+    text-align:left;
+    justify-content:left;
+    color: hsla(0, 0%, 0%, 0.452);
 }
