@@ -1,67 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZXC6ZKLPJ"></script>
-    <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZXC6ZKLPJ"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-0ZXC6ZKLPJ');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the gum tree.</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800&family=EB+Garamond:wght@400;500;600;700;800&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>the gum tree.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=EB+Garamond:wght@400;600&family=Inconsolata:wght@300;500;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <img src="media/koala-gumtree.png" width="150px">
-        <h1>the gum tree</h1>
-        <p class="intro-text"><i>
-            "Readers beware, my emotions ebb and flow like changing waves on these pages: sometimes shallow and soft, filled with light; sometimes high and crashing, thick and darkness. Inconsistency is far away. In the process, I'm being told several things, like a religion I'm forced to believe but simply don't. Henceforth, I write a minestrone of an ode, a eulogy, a lament, a rant, and a... ballad.
-            <br><br>
-            As these words appear on my screen, I am acutely aware that this is an epilogue to chapters of many. Each one is a self-driven journey to unravel more of the tangled web of my thoughts and experiences, as unpredictable and varied as the tides. This journey through love, loss, and self-discovery is far from over."
-        </i></p>
-        <p class="intro-text"><i>making make sense of the world because nothing else matters.
-        </p></i>
-        <br>
-        <div class="navigation">
-            <button class="button-dropdown-recent">recent posts.</button>
-            <a href="posts/post21.html"><button class="button-blog-select">2025/09/30 - september notes.</button></a>
-            <a href="posts/post20.html"><button class="button-blog-select">2025/09/14 - a spring journal.</button></a>
-            <a href="posts/post19.html"><button class="button-blog-select">2025/09/13 - the yule log pt 3.</button></a>
-            <br><br><br>
-            <button class="button-dropdown-reflections">💭 reflections.</button>
-            <a href="posts/post3.html"><button class="button-blog-select">2025/05/05 - on the stars' curse.</button></a>
-            <a href="posts/post6.html"><button class="button-blog-select">2025/05/19 - the nexus event.</button></a>
-            <a href="posts/post10.html"><button class="button-blog-select">2025/05/30 - fin.</button></a>
-            <a href="posts/post12.html"><button class="button-blog-select">2025/07/02 - cyclone.</button></a>
-            <a href="posts/post15.html"><button class="button-blog-select">2025/08/14 - because i exist.</button></a>
-            <a href="posts/post15.html"><button class="button-blog-select">2025/08/18 - cold nights.</button></a>
-            <br>
-            <button class="button-dropdown-logs">🗂️ logs.</button>
-            <a href="posts/post1.html"><button class="button-blog-select">2023/12/23 - making life difficult.</button></a>
-            <a href="posts/post2.html"><button class="button-blog-select">2024/12/08 - a more interesting year... i guess..</button></a>
-            <a href="posts/post5.html"><button class="button-blog-select">2025/05/12 - kirby.</button></a>
-            <a href="posts/post7.html"><button class="button-blog-select">2025/05/22 - vivid.</button></a>
-            <a href="posts/post8.html"><button class="button-blog-select">2025/05/25 - vivid pt. 2.</button></a>
-            <a href="posts/post11.html"><button class="button-blog-select">2025/06/25 - to love & hope again (kirby pt. 2)</button></a>
-            <a href="posts/post14.html"><button class="button-blog-select">2025/08/01 - kala!</button></a>
-            <a href="posts/post17.html"><button class="button-blog-select">2025/09/02 - the yule log pt 1.</button></a>
-            <a href="posts/post18.html"><button class="button-blog-select">2025/09/12 - the yule log pt 2.</button></a>
-            <a href="posts/post19.html"><button class="button-blog-select">2025/09/13 - the yule log pt 3.</button></a>
-            <br>
-            <button class="button-dropdown-notes">🗒️ notes.</button>
-            <a href="posts/post4.html"><button class="button-blog-select">2025/05/08 - be the fool.</button></a>
-            <a href="posts/post9.html"><button class="button-blog-select">2025/05/26 - what does it mean "to love" and "be loved?"</button></a>
-            <a href="posts/post13.html"><button class="button-blog-select">2025/07/31 - cape marguerite.</button></a>   
-            <a href="posts/post19.html"><button class="button-blog-select">2025/09/14 - a spring journal.</button></a>
-        </div>
+  <div class="container">
+    <div id="leaves-container"></div>
+
+    <img src="media/koala-gumtree.png" width="150" alt="Koala Gumtree" />
+    <h1>the gum tree</h1>
+    <p class="intro-text"><i>
+      "Readers beware, my emotions ebb and flow like changing waves on these pages: sometimes shallow and soft, filled with light; sometimes high and crashing, thick and darkness. Inconsistency is far away. In the process, I'm being told several things, like a religion I'm forced to believe but simply don't. Henceforth, I write a minestrone of an ode, a eulogy, a lament, a rant, and a... ballad.
+      <br /><br />
+      As these words appear on my screen, I am acutely aware that this is an epilogue to chapters of many. Each one is a self-driven journey to unravel more of the tangled web of my thoughts and experiences, as unpredictable and varied as the tides. This journey through love, loss, and self-discovery is far from over."
+    </i></p>
+    <p class="intro-text"><i>making make sense of the world because nothing else matters.</i></p>
+
+    <!-- Single unified grid: newest (21) to oldest (1) -->
+    <div class="navigation">
+      <h2>all posts.</h2>
+      <div class="blog-cards-grid">
+        <!-- 21 -->
+        <a href="posts/post21.html" class="blog-card" data-category="notes">
+          <img src="media/thumb/thumb21.jpg" alt="September Notes Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-notes">notes</span>
+            <div class="post-title">september notes.</div>
+            <div class="post-meta">2025/09/30 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 20 -->
+        <a href="posts/post20.html" class="blog-card" data-category="reflections">
+          <img src="media/thumb/thumb20.jpg" alt="A Spring Journal Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-reflections">reflections</span>
+            <div class="post-title">a spring journal.</div>
+            <div class="post-meta">2025/09/14 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 19 -->
+        <a href="posts/post19.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb19.jpg" alt="The Yule Log Pt 3 Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">the yule log pt 3.</div>
+            <div class="post-meta">2025/09/13 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 18 -->
+        <a href="posts/post18.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb18.jpg" alt="The Yule Log Pt 2 Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">the yule log pt 2.</div>
+            <div class="post-meta">2025/09/12 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 17 -->
+        <a href="posts/post17.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb17.jpg" alt="The Yule Log Pt 1 Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">the yule log pt 1.</div>
+            <div class="post-meta">2025/09/02 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 16 -->
+        <a href="posts/post16.html" class="blog-card" data-category="notes">
+          <img src="media/thumb/thumb16.jpg" alt="Midsummer Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-notes">notes</span>
+            <div class="post-title">cold nights.</div>
+            <div class="post-meta">2025/08/17 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 15 -->
+        <a href="posts/post15.html" class="blog-card" data-category="reflections">
+          <img src="media/thumb/thumb15.jpg" alt="Because I Exist Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-reflections">reflections</span>
+            <div class="post-title">because i exist.</div>
+            <div class="post-meta">2025/08/14 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 14 -->
+        <a href="posts/post14.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb14.jpg" alt="Kala! Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">kala!</div>
+            <div class="post-meta">2025/08/01 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 13 -->
+        <a href="posts/post13.html" class="blog-card" data-category="notes">
+          <img src="media/thumb/thumb13.jpg" alt="Light Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-notes">notes</span>
+            <div class="post-title">cape marguerite.</div>
+            <div class="post-meta">2025/07/07 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 12 -->
+        <a href="posts/post12.html" class="blog-card" data-category="reflections">
+          <img src="media/thumb/thumb12.jpg" alt="Cyclone Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-reflections">reflections</span>
+            <div class="post-title">cyclone.</div>
+            <div class="post-meta">2025/07/02 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 11 -->
+        <a href="posts/post11.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb11.jpg" alt="To Love & Hope Again Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">to love & hope again (kirby pt. 2)</div>
+            <div class="post-meta">2025/06/25 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 10 -->
+        <a href="posts/post10.html" class="blog-card" data-category="reflections">
+          <img src="media/thumb/thumb10.jpg" alt="Fin Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-reflections">reflections</span>
+            <div class="post-title">fin.</div>
+            <div class="post-meta">2025/05/30 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 9 -->
+        <a href="posts/post9.html" class="blog-card" data-category="notes">
+          <img src="media/thumb/thumb9.jpg" alt="Letters Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-notes">notes</span>
+            <div class="post-title">what does it mean "to love" and "be loved?"</div>
+            <div class="post-meta">2025/05/27 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 8 -->
+        <a href="posts/post8.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb8.jpg" alt="Vivid Pt 2 Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">vivid pt. 2.</div>
+            <div class="post-meta">2025/05/25 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 7 -->
+        <a href="posts/post7.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb7.jpg" alt="Vivid Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">vivid.</div>
+            <div class="post-meta">2025/05/22 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 6 -->
+        <a href="posts/post6.html" class="blog-card" data-category="reflections">
+          <img src="media/thumb/thumb6.jpg" alt="The Nexus Event Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-reflections">reflections</span>
+            <div class="post-title">the nexus event.</div>
+            <div class="post-meta">2025/05/19 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 5 -->
+        <a href="posts/post5.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb5.jpg" alt="Kirby Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">kirby.</div>
+            <div class="post-meta">2025/05/12 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 4 -->
+        <a href="posts/post4.html" class="blog-card" data-category="notes">
+          <img src="media/thumb/thumb4.jpg" alt="Be the Fool Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-notes">notes</span>
+            <div class="post-title">be the fool.</div>
+            <div class="post-meta">2025/05/08 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 3 -->
+        <a href="posts/post3.html" class="blog-card" data-category="reflections">
+          <img src="media/thumb/thumb3.jpg" alt="On The Stars' Curse Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-reflections">reflections</span>
+            <div class="post-title">on the stars' curse.</div>
+            <div class="post-meta">2025/05/05 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 2 -->
+        <a href="posts/post2.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb2.jpg" alt="A More Interesting Year Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">a more interesting year... i guess..</div>
+            <div class="post-meta">2024/12/08 • by ginodelosreyes</div>
+          </div>
+        </a>
+        <!-- 1 -->
+        <a href="posts/post1.html" class="blog-card" data-category="logs">
+          <img src="media/thumb/thumb1.jpg" alt="Making Life Difficult Thumbnail" />
+          <div class="post-info">
+            <span class="post-category cat-logs">logs</span>
+            <div class="post-title">making life difficult.</div>
+            <div class="post-meta">2023/12/23 • by ginodelosreyes</div>
+          </div>
+        </a>
+      </div>
     </div>
- 
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
